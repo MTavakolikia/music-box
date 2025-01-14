@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import localFont from 'next/font/local'
-import { Provider } from "@/components/ui/provider"
 
 import "./globals.css";
 
@@ -23,10 +22,7 @@ export default function RootLayout({
       <body
         className={iranSansFont.className}
       >
-        <Provider>
-          {children}
-
-        </Provider>
+        {children}
       </body>
     </html>
   );
